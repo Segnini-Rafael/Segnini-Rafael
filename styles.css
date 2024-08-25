@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F3F5FC;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.custom-input {
+    width: 100%;
+    max-width: 680px;
+    height: 150px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.message {
+    color: #495057;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.row-layout-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 680px;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-encrypt, .btn-decrypt {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+.btn-encrypt {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.btn-decrypt {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.result-container {
+    width: 100%;
+    max-width: 680px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message-title {
+    color: #343A40;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.message-description {
+    color: #495057;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.copy-button {
+    width: 100%;
+    max-width: 680px;
+    padding: 15px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none; /* Se muestra cuando sea necesario */
+}
+
+.copy-button span {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .custom-input {
+        height: 130px;
+        font-size: 16px;
+    }
+
+    .btn-encrypt, .btn-decrypt {
+        font-size: 14px;
+    }
+
+    .message-title {
+        font-size: 20px;
+    }
+
+    .message-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-input {
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .row-layout-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-encrypt, .btn-decrypt {
+        width: 100%;
+    }
+
+    .message-title {
+        font-size: 18px;
+    }
+
+    .message-description {
+        font-size: 14px;
+    }
+
+    .copy-button {
+        width: 100%;
+    }
+}

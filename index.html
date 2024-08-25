@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="/assets/imagenes/Muñeco.png" class="logo" alt="Logo">
+        <textarea placeholder="Ingrese el texto aquí" class="custom-input" id="input-text"></textarea>
+        <div class="row-layout">
+            <img src="/assets/imagenes/bi_exclamation-circle-fill.jpg" class="icon" alt="Icono de exclamación">
+            <span class="message">Solo letras minúsculas y sin acentos</span>
+        </div>
+        <div class="row-layout-buttons">
+            <button class="btn-encrypt">Encriptar</button>
+            <button class="btn-decrypt">Desencriptar</button>
+        </div>
+        <div id="result-container" class="result-container">
+            <span class="message-title">Ningún mensaje fue encontrado</span>
+            <span class="message-description">Ingresa el texto que desees encriptar o desencriptar.</span>
+        </div>
+        <button id="copy-button" class="copy-button" style="display: none;">
+            <span>Copiar</span>
+        </button>
+        <footer class="footer">
+            <p>Desarrollado por <strong>Rafael Segnini</strong> | Discord: segnini_92525 | 
+            <a href="https://github.com/Segnini-Rafael" target="_blank">GitHub</a></p>
+        </footer>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
